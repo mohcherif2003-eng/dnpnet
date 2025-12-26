@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.dnpnet.com">
+<meta name="author" content="DNP Net">
+<meta name="description" content="DNP Net - Votre partenaire automobile : dépannage, nettoyage et pièces détachées.">
+
+    <title>Votre Partenaire Automobile</title>
+    <link rel="icon" href="img/NdFRyBgp2XdTIVC99K7eP.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0e1b2a;
+            color: #ecf0f1;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #111c2f;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .header img {
+            height: 60px;
+        }
+
+        .header-buttons a {
+            margin-left: 20px;
+            color: #ecf0f1;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .header-buttons a:hover {
+            color: #3498db;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            background-image: url('img/012345678.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(8px);
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+
+        .hero-content p {
+            font-size: 1.3em;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+        }
+
+        .cta-button {
+            margin-top: 30px;
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: white;
+            color: #3498db;
+        }
+
+        .service-section {
+            background-color: #0e1b2a;
+            padding: 60px 20px;
+        }
+
+        .service-item {
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #162c3b;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+        }
+
+        .service-item img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+        }
+
+        .contact-section {
+            background-color: #1a2d40;
+            padding: 60px 20px;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .contact-container input,
+        .contact-container textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: none;
+            background-color: #2a3d50;
+            color: white;
+        }
+
+        .contact-container button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-container button:hover {
+            background-color: #217dbb;
+        }
+
+        footer {
+            background-color: #111c2f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#section2"><img src="img/NdFRyBgp2XdTIVC99K7eP.jpg" alt="Logo"></a>
+        <div class="header-buttons">
+            <a href="fourniseur.html">Fournisseur</a>
+            <a href="admin.html">Admin</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Votre Partenaire Automobile</h1>
+            <p>Le meilleur service automobile à votre disposition : dépannage, nettoyage, pièces détachées.</p>
+            <a href="#services" class="cta-button">Nos Services</a>
+        </div>
+    </section>
+
+    <section class="service-section" id="services">
+        <div class="service-item">
+            <span class="tag">Dépannage</span>
+            <img src="img/004.png" alt="Dépannage">
+            <h2>Dépannage 24/7</h2>
+            <p>Nos techniciens interviennent rapidement partout, jour et nuit, pour réparer votre véhicule et vous aider à reprendre la route.</p>
+            <a href="depannage.html" class="cta-button">En savoir plus</a>
+        </div>
+        <div class="service-item">
+            <span class="tag">Intérieur</span>
+            <img src="img/005.png" alt="Nettoyage Intérieur">
+            <h2>Nettoyage Intérieur</h2>
+            <p>Nous redonnons un éclat neuf à l'intérieur de votre véhicule avec des produits respectueux de l'environnement.</p>
+            <a href="nettoyage-interieur.html" class="cta-button">Voir le service</a>
+        </div>
+        <div class="service-item">
+            <span class="tag">Extérieur</span>
+            <img src="img/006.png" alt="Nettoyage Extérieur">
+            <h2>Nettoyage Extérieur</h2>
+            <p>Un lavage extérieur qui redonne brillance et protection à la carrosserie de votre voiture pour un look impeccable.</p>
+            <a href="nettoyage-exterieur.html" class="cta-button">Voir le service</a>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2>Contactez-nous</h2>
+            <p>Remplissez ce formulaire pour nous contacter :</p>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Votre nom" required>
+                <input type="email" id="email" placeholder="Votre adresse email" required>
+                <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Votre Partenaire Automobile. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Firebase & Formulaire Script -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+        import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBaJp_Wvqmrf2tcgBxId_K6gxpKTzlo_nA",
+            authDomain: "project-4838285586068134278.firebaseapp.com",
+            databaseURL: "https://project-4838285586068134278-default-rtdb.firebaseio.com",
+            projectId: "project-4838285586068134278",
+            storageBucket: "project-4838285586068134278.appspot.com",
+            messagingSenderId: "848473710998",
+            appId: "1:848473710998:web:4a2392d287965fc9017db7",
+            measurementId: "G-XCRTN3PYXM"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+
+        const form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            if (name && email && message) {
+                const contactRef = ref(database, "contacts");
+                const newContactRef = push(contactRef);
+
+                set(newContactRef, {
+                    name,
+                    email,
+                    message,
+                    timestamp: new Date().toISOString()
+                })
+                .then(() => {
+                    alert("Message envoyé avec succès !");
+                    form.reset();
+                })
+                .catch((error) => {
+                    console.error("Erreur :", error);
+                    alert("Une erreur est survenue. Réessayez.");
+                });
+            } else {
+                alert("Veuillez remplir tous les champs.");
+            }
+        });
+    </script>
+</body>
+</html>
